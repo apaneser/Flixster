@@ -14,12 +14,17 @@
         android:background="#3C3C3C"
         android:orientation="vertical">
 
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:showDividers="end"
+            android:divider="@drawable/divider_drawable"
             android:orientation="vertical"
-            android:divider="@drawable/divider_drawable">
+            android:showDividers="end">
 
             <TextView
                 android:id="@+id/tvTitle"
@@ -34,9 +39,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:showDividers="end"
+            android:divider="@drawable/divider_drawable"
             android:orientation="vertical"
-            android:divider="@drawable/divider_drawable">
+            android:showDividers="end">
 
             <RatingBar
                 android:id="@+id/ratingBar"
@@ -61,9 +66,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:showDividers="end"
+            android:divider="@drawable/divider_drawable"
             android:orientation="vertical"
-            android:divider="@drawable/divider_drawable">
+            android:showDividers="end">
 
             <TextView
                 android:id="@+id/genreList"
@@ -78,9 +83,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:showDividers="end"
+            android:divider="@drawable/divider_drawable"
             android:orientation="vertical"
-            android:divider="@drawable/divider_drawable">
+            android:showDividers="end">
 
             <TextView
                 android:id="@+id/releaseDate"
@@ -95,9 +100,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:showDividers="end"
+            android:divider="@drawable/divider_drawable"
             android:orientation="vertical"
-            android:divider="@drawable/divider_drawable">
+            android:showDividers="end">
 
             <TextView
                 android:id="@+id/popularity"
@@ -112,9 +117,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:showDividers="end"
+            android:divider="@drawable/divider_drawable"
             android:orientation="vertical"
-            android:divider="@drawable/divider_drawable">
+            android:showDividers="end">
 
             <TextView
                 android:id="@+id/ageRating"

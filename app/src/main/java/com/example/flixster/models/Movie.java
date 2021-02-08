@@ -11,6 +11,7 @@ import java.util.List;
 @Parcel
 public class Movie {
 
+    int movieId;
     String posterPath;
     String backdropPath;
     String title;
@@ -35,6 +36,7 @@ public class Movie {
         releaseDate = jsonObject.getString("release_date");
         voteCount = jsonObject.getString("vote_count");
         popularity = jsonObject.getString("popularity");
+        movieId = jsonObject.getInt("id");
         JSONArray list = jsonObject.getJSONArray("genre_ids");
 
         if (list != null) {
@@ -80,4 +82,8 @@ public class Movie {
     public String getPopularity() { return popularity; }
 
     public List<Integer> getGenreList() {return genreList;}
+
+    public int getMovieId() {
+        return movieId;
+    }
 }
